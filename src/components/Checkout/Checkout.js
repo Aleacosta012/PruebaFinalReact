@@ -29,7 +29,7 @@ const Checkout = () =>{
 
             const productsRef =collection(db, "Item")
 
-            const productsAddedFromFirestore = await getDocs(query(productsRef, where(documentId(),"in", ids) ))
+            const productsAddedFromFirestore = await getDocs(query(productsRef, where(documentId(),"in", id) ))
 
             const {docs} = productsAddedFromFirestore
 
